@@ -2,6 +2,7 @@
 ## Technology Stack
 ###### Ruby Version: 2.7.3
 ###### Rails Version: 6.x
+###### Database: Postgres
 
 ## How to run ?
 * Open your terminal and run 
@@ -9,6 +10,8 @@
 
 * And then run 
  > **bundle**
+
+* Create a database.yml file in config/database.yml with your postgres username and password.
 
 * Next run database tasks using following commands
  > rails db:create <br/>
