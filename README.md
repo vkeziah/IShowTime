@@ -21,7 +21,7 @@
 * Open a new tab in your terminal and run sidekiq using the following command
  > bundle exec sidekiq
 
-## For running tests use the following command in your terminal
+## For running tests use the following commands in your terminal
  > RAILS_ENV=test rails db:create <br/>
  > RAILS_ENV=test rails db:migrate <br/>
  > bundle exec rspec
