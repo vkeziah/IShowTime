@@ -52,7 +52,10 @@ If you don't pass status and priority and by default it uses its default status 
   > When we create a new movie with title then the system creates a movie record with status **inprogress** and keeps it in queue, So every job we create will be there in queue for background process which is to satisfy the point given in test taks **Jobs could be added by rails command line at any time by the user to the queue**
 
   > But if at all we dont want a movie to be in queue upon creation we should keep its status as **waiting** which tells the system that don't keep it in queue which is to satisfy the point given in the test task **Jobs could be added and invoked by ignoring the queue at any point by the user from the command line.**
+  
   > Please check for sample records that are there in db/seed.rb file for the above 2 points**
+  
+  > I have added a state machine for the movie model, by default when we create a new record it goes into the queue with status inprogress. If we want to ignore the queue we need to pass status 'waiting' when we are creating a new movie record. State machine works as the following by default jobs have an inprogress status. Using state machine transitions we can move jobs to inprogress from either waiting or from the failed status, but we can not move completed(done) jobs to inprogress which is the flow I have implemented for this test job.
 
 ## Support for workers. Jobs should be picked by workers and one of the workers should be that API itself. The job should have the option to decide when they should run based on the time provided.
 
