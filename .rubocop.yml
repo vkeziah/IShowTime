@@ -1,0 +1,56 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "coverage/**/*"
+    - "log/*"
+    - "node_modules/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - ".git/**/*"
+  TargetRubyVersion: 2.7.3
+  TargetRailsVersion: 6
+  NewCops: enable
+  SuggestExtensions: false
+
+############### Layout ###############
+
+Layout/FirstArgumentIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+Layout/FirstArrayElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+############### Metrics ###############
+
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - "db/migrate/**/*"
+
+############### Naming ###############
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: exception
+
+############### Style ###############
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+############### Rails ###############
+

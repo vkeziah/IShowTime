@@ -1,0 +1,9 @@
+default: &default
+  movie_scheduler:
+    cron: '0 1 * * *'
+    class: Movie::QueuerWorker
+    description: >
+      It runs everyday and picks up all movies for the schedule_date
+
+development:
+  <<: *default

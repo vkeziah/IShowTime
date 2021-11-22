@@ -1,0 +1,7 @@
+default: &default
+  queues:
+    - default
+
+development:
+  :concurrency: 5
+  <<: *default
