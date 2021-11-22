@@ -83,3 +83,5 @@ I have followed some of the design patterns to have better code quality and for 
 ## Rails best practices, coding conventions and format checking
 
 I have used rubocop gem for this.
+
+![Rspec Tests](/public/rspec_tests.png)
