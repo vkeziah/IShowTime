@@ -66,8 +66,8 @@ If you don't pass status and priority and by default it uses its default status 
 ## Monitoring of api
 For checking api request usage by user hit the following endpoint with **Authorization** header
 
-  > GET localhost:3000/api/v1/metrics
-I have used **ActiveSupport::Notifications.subscribe** to monitor api controller requests.
+  > GET localhost:3000/api/v1/metrics <br/>
+  > I have used **ActiveSupport::Notifications.subscribe** to monitor api controller requests.
 
 ## App structure and objects responsibilities
 
