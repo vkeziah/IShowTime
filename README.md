@@ -84,4 +84,6 @@ I have followed some of the design patterns to have better code quality and for 
 
 I have used rubocop gem for this.
 
+## Screenshots
 ![Rspec Tests](/public/rspec_tests.png)
+![Postman REST client tool](/public/postman_request.png)
