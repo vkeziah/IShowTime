@@ -28,7 +28,7 @@
 
 ## Authentication to the API using JWT
 
-Use any REST Client tools or curl and create a user using the following endpoint and with user hash of email and password then you should receive an authentication token to use it in further requests and please save that token.
+Use any REST client tools or curl and create a user using the following endpoint and with user hash of email and password then you should receive an authentication token to use it in further requests and please save that token.
 
   > POST localhost:3000/api/v1/users <br/>
   > PARAMS: user[email] = 'email@email.com' and user['password'] = 'yourpassword'
